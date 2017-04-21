@@ -1,9 +1,10 @@
 // Generic PS module properties
 
-moduleType timingLong
+moduleType timingBarrel
 // Active silicon size
-width 48
-length 96
+width 184.48
+length 46.5
+
 
 sensorLayout mono
 // zCorrelation samesegment
@@ -14,24 +15,24 @@ powerStripChip 0
 powerModuleChip 0 
 powerModuleOptical 0
 
-sensorThickness 0.3
+sensorThickness 3.0
 
 serviceHybridWidth 1.0  // 10.63 hybrid + 1.37 inactive silicon // OK
 frontEndHybridWidth 1.0 // 10.05 hybrid + 1.45 inactive silicon // OK
 hybridThickness 1.0
 supportPlateThickness 1.0
 
-physicalLength 92        // to avoid collisions with previous module in barrels
+physicalLength 46.5     // to avoid collisions with previous module in barrels
 
 reduceCombinatorialBackground true 
 
 Sensor 1 {
   sensorType largepix
-  numStripsAcross 48  // 48mm/1mm
-  numSegments 32 // 96mm/3mm
+  numStripsAcross 16  // 
+  numSegments 4 // 
   numROCX 2
   numROCY 4
 }
 
-plotColor 8
+plotColor 6
 
